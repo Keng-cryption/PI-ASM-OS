@@ -2,7 +2,7 @@ ENTRY(_start)
 
 SECTIONS
 {
-  . = 0x80000;         /* GPU loads kernel8 at 0x80000 on Pi; QEMU matches this */
+  . = 0x80000;         
   .text : {
     KEEP(*(.text._start))
     *(.text*)
@@ -11,3 +11,4 @@ SECTIONS
   .data :   { *(.data*) }
   .bss  :   { *(.bss*) *(COMMON) }
 }
+
