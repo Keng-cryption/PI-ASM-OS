@@ -1,5 +1,3 @@
-/* AArch64 entry at EL2/EL1 depending on platform; QEMU raspi3 enters EL2.
-   We'll drop to EL1h before calling C. */
   .section .text._start
   .globl _start
 _start:
