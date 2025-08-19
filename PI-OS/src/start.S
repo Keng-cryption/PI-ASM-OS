@@ -36,4 +36,4 @@ hang:
   .align 11
   .global _stack_top
 _stack_top:
-  .space 4096            
+  .space 65536           
