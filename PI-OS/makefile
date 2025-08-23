@@ -1,12 +1,4 @@
-CROSS ?= aarch64-elf
-CC     = $(CROSS)-gcc
-LD     = $(CROSS)-ld
-OBJCOPY= $(CROSS)-objcopy
-
-CFLAGS = -O2 -ffreestanding -nostdlib -nostartfiles -Wall -Wextra -mcpu=cortex-a53 -fno-asynchronous-unwind-tables -fno-stack-protector
-LDFLAGS= -T linker.ld -nostdlib
-
-SRC = src/start.S src/uart.c src/main.c
+SRC = src/start.S src/uart.c src/main.c src/calc.c
 OBJ = $(SRC:.c=.o)
 OBJ := $(OBJ:.S=.o)
 
